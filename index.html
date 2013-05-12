@@ -1,0 +1,140 @@
+<!doctype html>
+<!--vim:set sw=4 ts=4 ft=html expandtab:-->
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="author" content="Luc Didry">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Framasoft boilerplate</title>
+
+        <link rel="shortcut icon" href="./img/favicon.png">
+
+        <link rel="stylesheet" href="css/framasoft.css">
+        <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+        <h1 class="framagalaxie title">Charte graphique <span class="frama">Frama</span><span class="vrac">galaxie</span></h1>
+        <hr>
+        <p class="hr-tips">hr {background-color: #eee; border: none;}</p>
+        <table class="table-colors">
+            <tr>
+                <td><span class="fond-frama"></span></td>
+                <td>#6A5687</td>
+                <td>106, 86, 135</td>
+            </tr>
+            <tr>
+                <td><span class="fond-soft"></span></td>
+                <td>#EB7B41</td>
+                <td>235, 126, 64</td>
+            </tr>
+            <tr>
+                <td><span class="fond-logiciel"></span></td>
+                <td>#0C5B7A</td>
+                <td>11, 91, 122</td>
+            </tr>
+            <tr>
+                <td><span class="fond-culture"></span></td>
+                <td>#CC2D18</td>
+                <td>204, 45, 28</td>
+            </tr>
+            <tr>
+                <td><span class="fond-services"></span></td>
+                <td>#9BAE5F</td>
+                <td>155, 174, 94</td>
+            </tr>
+            <tr>
+                <td><span class="fond-vrac"></span></td>
+                <td>#DBA306</td>
+                <td>218, 163, 44</td>
+            </tr>
+        </table>
+        <table class="table-typo">
+            <tr>
+                <td colspan="2">
+                    <h1 class="framagalaxie"><span class="frama">Frama</span><span class="soft">soft</span></h1>
+                    <p>h1<br>
+                    font-family: DejaVu Sans, Verdana, Geneva, sans-serif;<br>
+                    font-size: 40px; /* 2.857em */</p>
+                </td>
+                <td colspan="2" style="text-align:right;">
+                    <h1 class="framagalaxie"><span class="vrac">titre Framatrucs</span></h1>
+                    <p>h1<br>
+                    font-size: 40px; /* 2.857em */<br>&nbsp;</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h1><a href="#">liens sauf Framagalaxie</a></h1>
+                    <p>color:#888;<br>
+                    text-decoration:none;<br>
+                    border-bottom: 1px dashed #888;</p>
+                </td>
+                <td colspan="2">
+                    <h1><a href="#" class="lien-hover">tous liens :hover</a></h1>
+                    <p>color:#625092;<br>
+                    text-decoration:none;<br>
+                    border-bottom: 1px dashed #625092;</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h1>h1, h2, h3, h4, h5, h6</h1>
+                </td>
+                <td colspan="2">
+                    <p>font-family: PTSansCaption, GillSans, sans-serif;<br>
+                    color: #666; /* rgb(106, 106, 106); */<br>
+                    font-weight: bold;</p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:5%;">
+                    <h1>h3</h1>
+                </td>
+                <td style="width:45%;">
+                    <p>font-size: 24px; /* ou 1.714em */</p>
+                </td>
+                <td style="width:5%;">
+                    <h1>h4</h1>
+                </td>
+                <td style="width:45%;">
+                    <p>font-size: 18.2px; /* ou 1.3em */</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>p</h1>
+                </td>
+                <td colspan="3">
+                    <p>font-family: DejaVu Sans, Verdana, Geneva, sans serif;<br>
+                    color: #333; /* rgb (51, 51, 51) */</p>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <h1>Télécharger la feuille de style <span class="frama">Frama</span><span class="vrac">galaxie</span></h1>
+            <p>C&rsquo;est <a href="css/framasoft.css">ici</a> ou via le dépôt <a href="https://github.com/pyg77/framacss">github</a></p>
+            <h1>Classes fournies</h1>
+            <h4>frama, soft, logiciel, culture, services, vrac</h4>
+            <p>Ces classes colorent le texte avec les couleurs des catégories de Framasoft.<br>
+            Utilisez-les ainsi&nbsp;: <span class="code">&lt;span class="frama"&gt;Frama&lt;/span&gt;&lt;span class="soft"&gt;soft&lt;/span&gt;</span></p>
+            <h4>fond-frama, fond-soft, fond-logiciel, fond-culture, fond-services, fond-vrac</h4>
+            <p>Ces classes changent la couleur de background avec les couleurs des catégories de Framasoft.</p>
+            <h4>framagalaxie</h4>
+            <p>Change la famille de police d&rsquo;une balise h1.<br>
+            Utilisez-la ainsi&nbsp;: <span class="code">&lt;h1 class="framagalaxie"&gt;Service Framasoft&lt;h1&gt;</span></p>
+        </div>
+        <div>
+            <h1>Conseils typographiques</h1>
+            <ul>
+                <li>Pensez à mettre des espaces insécables devant les signes de ponctuation double (:!? etc.) ou avec les guillemets français («»).<br>
+                Rappel&nbsp;: le code HTML de l&rsquo;espace insécable est &amp;nbsp;</li>
+                <li>Utilisez des apostrophes typographiques<br>
+                Rappel&nbsp;: le code HTML de l&rsquo;apostrophe typographique est &amp;rsquo;</li>
+                <li>Même si c&rsquo;est tentant, on ne met pas de majuscule au milieu de Framasoft, Framapad… Une au début suffit.</li>
+            </ul>
+        </div>
+    </body>
+</html>
+
