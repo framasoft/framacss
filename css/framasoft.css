@@ -50,13 +50,19 @@ h1.framagalaxie {
     font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;
     font-size: 2.857em;
 }
+@font-face {
+  font-family: 'PT Sans Caption';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans Caption'), local('PTSans-Caption'), url(../fonts/ptsanscaption.woff) format('woff');
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: PTSansCaption, GillSans, sans-serif;
+    font-family: 'PT Sans Caption', GillSans, sans-serif;
     color: #666;
     font-weight: bold;
 }
