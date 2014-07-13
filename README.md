@@ -1,5 +1,5 @@
 framacss
 ========
 
-  * http://htmlpreview.github.io/?https://github.com/framasoft/framacss/blob/master/index.html pour visualiser les styles en ligne.
+  * <http://framacss.fiat-tux.fr> pour visualiser les styles en ligne.
 
