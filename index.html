@@ -9,18 +9,18 @@
 
     <link rel="shortcut icon" href="./img/favicon.png">
 
-    <link href="default.css" media="all" rel="stylesheet">
-    <link href="frama.css" media="all" rel="stylesheet">
+    <link href="css/default.css" media="all" rel="stylesheet">
+    <link href="css/frama.css" media="all" rel="stylesheet">
     <script type="text/javascript" >
     $(document).ready(function() {
         var style = 1;
         $('#style1').on('change', function() {
-            $('head').append('<link href="frama.css" media="all" rel="stylesheet">');
+            $('head').append('<link href="css/frama.css" media="all" rel="stylesheet">');
             style=1;
             return false;
         });
         $('#style0').on('change', function() {
-            $('link[href="frama.css"]').remove();
+            $('link[href="css/frama.css"]').remove();
             style=0;
             return false;
         });
@@ -168,7 +168,7 @@
 
             <div class="well">
                 <h2>Feuille de style</h2>
-                <p>La feuille de style se trouve sur <a href="https://git.framasoft.org/framasoft/framacss">ce dépôt</a> ou bien <a href="frama.css">ici même</a></p>
+                <p>La feuille de style se trouve sur <a href="https://git.framasoft.org/framasoft/framacss">ce dépôt</a> ou bien <a href="css/frama.css">ici même</a></p>
                 <p>Le thème s’appuie sur Bootstrap 3.2.0, il contient donc les même classes.</p>
                 <p>Il contient en plus des classes spécifiques à Framasoft : <code>.frama/.violet</code>, <code>.soft/.orange</code>, <code>.logiciel/.bleu</code>, <code>.culture/.rouge</code>, <code>.services/.vert</code>, <code>.vrac/.jaune</code> pour colorier le texte
                    et <code>.fond-frama</code>, <code>.fond-soft</code>, <code>.fond-logiciel</code>, <code>.fond-culture</code>, <code>.fond-services</code>, <code>.fond-vrac</code> pour utiliser la couleur de titre en arrière plan (faites attention à la couleur du texte : utiliser du blanc sur le jaune, le vert ou le orange ne permet pas d'avoir un contraste suffisant).
