@@ -23,7 +23,6 @@
 
 body {
   font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;
-  color:#333;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,8 +36,6 @@ h1 {font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;} /* framatitle */
 .trait {
     background-color: #EEE;
     height: 11px;
-    margin:0 15px 20px 15px;
-    width:95%;
 }
 
 
@@ -49,4 +46,12 @@ h1 {font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;} /* framatitle */
 .vert { color :#9BAE5F }
 .jaune { color : #DBA306}
 
+.hex, .rgb, .hsv { font-weight:normal; font-size:12px;}
 
+.hex {float:right;}
+
+.container.ombre {
+    padding:20px 40px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
