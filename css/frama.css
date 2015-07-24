@@ -1,25 +1,65 @@
 @font-face {
     font-family: 'PTSans';
-    src: url('fonts/PTS55F-webfont.eot');
-    src: url('fonts/PTS55F-webfont.eot') format('embedded-opentype'),
-         url('fonts/PTS55F-webfont.woff') format('woff'),
-         url('fonts/PTS55F-webfont.ttf') format('truetype'),
-         url('fonts/PTS55F-webfont.svg') format('svg');
+    src: url('../fonts/ptsans/PTS55F-webfont.eot');
+    src: url('../fonts/ptsans/PTS55F-webfont.eot') format('embedded-opentype'),
+         url('../fonts/ptsans/PTS55F-webfont.woff') format('woff'),
+         url('../fonts/ptsans/PTS55F-webfont.ttf') format('truetype'),
+         url('../fonts/ptsans/PTS55F-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: 'PTSansCaption';
-    src: url('fonts/PTC55F-webfont.eot.eot');
-    src: url('fonts/PTC55F-webfont.eot') format('embedded-opentype'),
-         url('fonts/PTC55F-webfont.woff') format('woff'),
-         url('fonts/PTC55F-webfont.woff') format('truetype'),
-         url('fonts/PTC55F-webfont.svg') format('svg');
+    src: url('../fonts/ptsans_caption/PTC55F-webfont.eot');
+    src: url('../fonts/ptsans_caption/PTC55F-webfont.eot') format('embedded-opentype'),
+         url('../fonts/ptsans_caption/PTC55F-webfont.woff') format('woff'),
+         url('../fonts/ptsans_caption/PTC55F-webfont.woff') format('truetype'),
+         url('../fonts/ptsans_caption/PTC55F-webfont.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
+
+/*@font-face {
+    font-family: "DejaVu Sans";
+    src: url('../fonts/dejavusans_book/DejaVuSans-webfont.eot');
+    src: url('../fonts/dejavusans_book/DejaVuSans-webfont.eot') format('embedded-opentype'),
+         url('../fonts/dejavusans_book/DejaVuSans-webfont.woff') format('woff'),
+         url('../fonts/dejavusans_book/DejaVuSans-webfont.woff') format('truetype'),
+         url('../fonts/dejavusans_book/DejaVuSans-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url('../fonts/dejavusans_bold/DejaVuSans-Bold-webfont.eot');
+    src: url('../fonts/dejavusans_bold/DejaVuSans-Bold-webfont.eot') format('embedded-opentype'),
+         url('../fonts/dejavusans_bold/DejaVuSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/dejavusans_bold/DejaVuSans-Bold-webfont.woff') format('truetype'),
+         url('../fonts/dejavusans_bold/DejaVuSans-Bold-webfont.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url('../fonts/dejavusans_oblique/DejaVuSans-Oblique-webfont.eot');
+    src: url('../fonts/dejavusans_oblique/DejaVuSans-Oblique-webfont.eot') format('embedded-opentype'),
+         url('../fonts/dejavusans_oblique/DejaVuSans-Oblique-webfont.woff') format('woff'),
+         url('../fonts/dejavusans_oblique/DejaVuSans-Oblique-webfont.woff') format('truetype'),
+         url('../fonts/dejavusans_oblique/DejaVuSans-Oblique-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: italic, oblique;
+}
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url('../fonts/dejavusans_boldoblique/DejaVuSans-BoldOblique-webfont.eot');
+    src: url('../fonts/dejavusans_boldoblique/DejaVuSans-BoldOblique-webfont.eot') format('embedded-opentype'),
+         url('../fonts/dejavusans_boldoblique/DejaVuSans-BoldOblique-webfont.woff') format('woff'),
+         url('../fonts/dejavusans_boldoblique/DejaVuSans-BoldOblique-webfont.woff') format('truetype'),
+         url('../fonts/dejavusans_boldoblique/DejaVuSans-BoldOblique-webfont.svg') format('svg');
+    font-weight: bold;
+    font-style: italic, oblique;
+}*/
 
 body {
   font-family: "DejaVu Sans", Verdana, Geneva, sans-serif;
@@ -46,7 +86,11 @@ h1 {font-family: "DejaVu Sans", Verdana, Geneva, sans-serif; font-weight:bold; }
     box-shadow: -4px 6px 9px rgba(50, 50, 50, 0.5);
 }
 
-.signature { color:#795548;}
+.signature {
+    font-style: italic;
+    text-align:right;
+    color:#795548;
+}
 
 /************
  * Couleurs *
@@ -350,47 +394,49 @@ a.text-danger:focus {
 
 /* Background */
 .bg-primary,
-.bg-primary a,
-a.bg-primary:focus,
-a.bg-primary:hover {
+.bg-primary a:not(.btn),
+a.bg-primary:focus:not(.btn),
+a.bg-primary:hover:not(.btn) {
     color: #fff;
     background-color: #6A5687;
 }
-.bg-success, a.bg-success:hover {
+.bg-success, a.bg-success:hover:not(.btn) {
     background-color: #E3EBC7;
 }
-.bg-info, a.bg-info:hover {
+.bg-info, a.bg-info:hover:not(.btn) {
     background-color: #E1F8FC;
 }
-.bg-warning, a.bg-warning:hover {
+.bg-warning, a.bg-warning:hover:not(.btn) {
     background-color: #FFEBB5;
 }
-.bg-danger,a.bg-danger:hover {
+.bg-danger,a.bg-danger:hover:not(.btn) {
     background-color: #fde0dc;
 }
 
 /* Alerts */
-.alert-success a,
+.alert-success a:not(.btn),
+.alert-success a:hover:not(.btn),
 .alert-success {
     color: #304219;
     background:#E3EBC7;
     border-color: #C0D481;
 }
-.alert-info a,
+.alert-info a:not(.btn),
+.alert-info a:hover:not(.btn),
 .alert-info {
     color: #0C5B7A;
     background-color: #E1F8FC;
     border-color: #B2D5DB;
 }
-.alert-warning a,
-.alert-danger a:hover,
+.alert-warning a:not(.btn),
+.alert-danger a:hover:not(.btn),
 .alert-warning {
     color: #A15014 !important;
     background-color: #FFEBB5;
     border-color: #FFCF4F;
 }
-.alert-danger a,
-.alert-danger a:hover,
+.alert-danger a:not(.btn),
+.alert-danger a:hover:not(.btn),
 .alert-danger {
     color: #AB2909 !important;
     background-color: #fde0dc;
@@ -475,8 +521,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success {
     color: #fff;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
-    background-color: #8E9C48;
-    border-color: #8E9C48;
+    background-color: #677835;
+    border-color: #677835;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -484,8 +530,8 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
     color: #fff;
-    background-color: #7D8C3F;
-    border-color: #7D8C3F;
+    background-color: #52632A;
+    border-color: #52632A;
 }
 .btn-success.disabled,
 .btn-success[disabled],
@@ -502,8 +548,8 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-    background-color: #8E9C48;
-    border-color: #8E9C48;
+    background-color: #677835;
+    border-color: #677835;
 }
 .btn-success .badge {
     color: #677835;
@@ -624,12 +670,16 @@ fieldset[disabled] .btn-danger.active {
     text-shadow: none;
     background-color: #fff;
 }
+.navbar-default .navbar-nav > li > a.btn-soutenir,
 .btn-soutenir {
     color: #fff;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
     background-color: #DBA306;
     border-color: #DBA306;
 }
+.navbar-default .navbar-nav > li > a.btn-soutenir:hover,
+.navbar-default .navbar-nav > li > a.btn-soutenir:focus,
+.navbar-default .navbar-nav > li > a.btn-soutenir:active,
 .btn-soutenir:hover,
 .btn-soutenir:focus,
 .btn-soutenir:active,
@@ -720,10 +770,18 @@ fieldset[disabled] .btn-link:focus {
   background-color: #6A5687;
 }
 
+/* Modal header title */
+.modal-header h1,.modal-header h2,.modal-header h3,
+.modal-header h4,.modal-header h5,.modal-header h6 {
+    font-size: 24px;
+}
 
+/* Cleaning */
+a.btn,
+.nav-pills a,
 .nav-container a,
 .dropdown-menu a,
-.nav a { text-decoration:none;}
+.nav a { text-decoration:none !important;}
 
 /* a11y (https://github.com/paypal/bootstrap-accessibility-plugin) */
 .btn:focus,
@@ -740,7 +798,9 @@ fieldset[disabled] .btn-link:focus {
 .btn-warning:focus,
 .btn-warning.active:focus,
 .btn-danger:focus,
-.btn-danger.active:focus {
+.btn-danger.active:focus,
+.btn-soutenir:focus,
+.btn-soutenir.active:focus {
   outline: dotted 1px white;
 }
 
@@ -785,3 +845,6 @@ a.bg-primary:focus {
   width: 100%;
 }
 
+cite {
+  font-style:italic;
+}

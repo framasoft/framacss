@@ -10,7 +10,7 @@ Si vous souhaitez travailler avec nous, **forkez-nous sur [git.framasoft.org](ht
 Framacss
 ========
 
-Charte graphique accessible reprenant les classes de Bootstrap 3.2.0 avec la palette de couleur de Framasoft.
+Charte graphique accessible reprenant les classes de Bootstrap 3.3.5 avec la palette de couleur de Framasoft.
 
 Version en ligne : https://framalab.org/framacss/
 
