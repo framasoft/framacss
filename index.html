@@ -11,22 +11,6 @@
 
     <link href="css/default.css" media="all" rel="stylesheet">
     <link href="css/frama.css" media="all" rel="stylesheet">
-    <script type="text/javascript" >
-    $(document).ready(function() {
-        $('link[href="/nav/frama.css"]').remove();
-        var style = 1;
-        $('#style1').on('change', function() {
-            $('head').append('<link href="css/frama.css" media="all" rel="stylesheet">');
-            style=1;
-            return false;
-        });
-        $('#style0').on('change', function() {
-            $('link[href="css/frama.css"]').remove();
-            style=0;
-            return false;
-        });
-    });
-    </script>
 </head>
 <body class="fb_g2">
     <script src="https://n1.framasoft.org/nav/nav.js" type="text/javascript"></script>
@@ -241,14 +225,6 @@
         <hr class="trait" />
         <div class="row">
             <div class="col-md-4">
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-default">
-                        <input type="radio" name="options" id="style0"> Thème bootstrap
-                    </label>
-                    <label class="btn btn-default active">
-                        <input type="radio" name="options" id="style1" checked> Nouveau thème
-                    </label>
-                </div>
                 <h1><img src="img/logo.png" alt="" /> <span class="violet">Frama</span><span class="orange">soft</span></h1>
                 <h1><img src="img/logo-bleu.png" alt="" /> <span class="violet">Frama</span><span class="bleu">libre</span></h1>
                 <h1><img src="img/logo-rouge.png" alt="" /> <span class="violet">Frama</span><span class="rouge">blog</span></h1>
